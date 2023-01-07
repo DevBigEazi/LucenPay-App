@@ -73,8 +73,8 @@ const CurrencyConverter = () => {
           changeAmount={handleToAmountChange}
         />
         <div className="converterBtn">
-          <Button to="/buyCrypto" name="Buy / Receive" />
-          <Button to="/sellCrypto" name="Sell / Send" />
+          <Button to="/buyCrypto" name="Receive" />
+          <Button to="/sellCrypto" name="Send" />
         </div>
       </section>
     </>
