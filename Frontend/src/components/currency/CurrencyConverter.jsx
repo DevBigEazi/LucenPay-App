@@ -55,26 +55,28 @@ const CurrencyConverter = () => {
 
   return (
     <>
-      <h4>Send/Recieve Payment within few minutes</h4>
-      <CurrencyRow
-        currencyOptions={currencyOptions}
-        selectedCurrency={fromCurrency}
-        changeCurrency={(e) => setFromCurrency(e.target.value)}
-        amount={fromAmount}
-        changeAmount={handleFromAmountChange}
-      />
-      <div className="equals ">=</div>
-      <CurrencyRow
-        currencyOptions={currencyOptions}
-        selectedCurrency={toCurrency}
-        changeCurrency={(e) => setToCurrency(e.target.value)}
-        amount={toAmount}
-        changeAmount={handleToAmountChange}
-      />
-      <div className="converterBtn">
-        <Button to="/buyCrypto" name="Buy" />
-        <Button to="/sellCrypto" name="Sell" />
-      </div>
+      <section className="container converter">
+        <h4>Send/Recieve Payment within minutes</h4>
+        <CurrencyRow
+          currencyOptions={currencyOptions}
+          selectedCurrency={fromCurrency}
+          changeCurrency={(e) => setFromCurrency(e.target.value)}
+          amount={fromAmount}
+          changeAmount={handleFromAmountChange}
+        />
+        <div className="equals ">=</div>
+        <CurrencyRow
+          currencyOptions={currencyOptions}
+          selectedCurrency={toCurrency}
+          changeCurrency={(e) => setToCurrency(e.target.value)}
+          amount={toAmount}
+          changeAmount={handleToAmountChange}
+        />
+        <div className="converterBtn">
+          <Button to="/buyCrypto" name="Buy / Receive" />
+          <Button to="/sellCrypto" name="Sell / Send" />
+        </div>
+      </section>
     </>
   );
 };

@@ -1,12 +1,22 @@
+.converter {
+  margin: 0 auto;
+}
+.converter h4 {
+  margin-bottom: 1rem;
+}
+
 .currency-row h1 {
   margin: 0;
   margin-bottom: 0.5rem;
 }
 
-.currency-row .input {
+.currency-row .input,
+.currency-row select {
+  font-size: 1rem;
   border: 1px solid black;
   width: 7rem;
-  padding: 0.25rem;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
@@ -15,7 +25,7 @@
 }
 
 .currency-row select {
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
 }
 
 .currency-row .equals {
@@ -26,7 +36,5 @@
 .converterBtn {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3rem;
+  margin: 0 auto;
 }

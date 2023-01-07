@@ -2,15 +2,15 @@ import React from "react";
 import { HiArrowRight } from "react-icons/hi";
 import Button from "../components/Buttons/Button";
 import CurrencyConverter from "./currency/CurrencyConverter";
-// import Image from "../Images/hero-img.webp";
-// import { RiMoneyPoundCircleFill } from "react-icons/ri";
-// import { RiMoneyDollarCircleFill } from "react-icons/ri";
-// import { RiMoneyEuroBoxFill } from "react-icons/ri";
-// import { TbCurrencyNaira } from "react-icons/tb";
-// import { GiMoneyStack } from "react-icons/gi";
-// import { GrMoney } from "react-icons/gr";
-// import { GiReceiveMoney } from "react-icons/gi";
-// import { GiPayMoney } from "react-icons/gi";
+import Image from "../Images/hero-img.webp";
+import { RiMoneyPoundCircleFill } from "react-icons/ri";
+import { RiMoneyDollarCircleFill } from "react-icons/ri";
+import { RiMoneyEuroBoxFill } from "react-icons/ri";
+import { TbCurrencyNaira } from "react-icons/tb";
+import { GiMoneyStack } from "react-icons/gi";
+import { GrMoney } from "react-icons/gr";
+import { GiReceiveMoney } from "react-icons/gi";
+import { GiPayMoney } from "react-icons/gi";
 
 const MainHeader = () => {
   return (
@@ -32,19 +32,36 @@ const MainHeader = () => {
           />
         </div>
         <div className="main-container-right">
-          {/* <div className="main-header-circle-out-1">
-              <span><GiMoneyStack/></span>
-              <span><GrMoney/></span>
-              <span><GiReceiveMoney/></span>
-              <span><GiPayMoney/></span>
-            </div>
-            
-            <div className="main-header-circle-out-2">
-              <span><RiMoneyPoundCircleFill/></span>
-              <span><RiMoneyDollarCircleFill/></span>
-              <span><RiMoneyEuroBoxFill/></span>
-              <span><TbCurrencyNaira/></span>
-            </div> */}
+          <div className="main-header-circle-out-1">
+            <span>
+              <TbCurrencyNaira />
+            </span>
+            <span>
+              <RiMoneyEuroBoxFill />
+            </span>
+            <span>
+              <RiMoneyDollarCircleFill />
+            </span>
+            <span>
+              <RiMoneyPoundCircleFill />
+            </span>
+          </div>
+
+          {/* <div className="main-header-circle-out-2">
+            <span>
+              <GiPayMoney />
+            </span>
+            <span>
+              <GiReceiveMoney />
+            </span>
+            <span>
+            <GrMoney />
+            </span>
+            <span>
+              
+              <GiMoneyStack />
+            </span>
+          </div> */}
 
           <div className="main-header-circle-image">
             {/* <img src={Image} alt="lucent-logo" /> */}
